@@ -21,7 +21,6 @@ class Carousel {
 
     }
     create() {
-        console.log(this.imgArr)
         if (!window.containerCarousel) return console.log("You need to create a div with the id of containerCarousel")
         this.createAndStyleElements()
     }
@@ -42,7 +41,6 @@ class Carousel {
         }
 
         function styleImg(arr) {
-            console.log(arr)
             for (let i = 0; i < arr.length; i++) {
                 arr[i].style.position = "absolute";
                 arr[i].style.width = that.imgWidthRatio + "%"
@@ -103,7 +101,6 @@ class Carousel {
                     }, 1100)
                     //-------------------------------------------------
                 that.view--;
-                console.log(that.view)
                     //Slide the images to the right
                 for (let img of that.imgArr) {
                     let left = getComputedStyle(img)["left"];
@@ -117,7 +114,6 @@ class Carousel {
                     setTimeout(() => {
                         that.imgArr = that.shiftRight(that.imgArr, 1)
                         that.imgArr[0].style.display = "block";
-                        console.log(that.imgArr)
                     }, 1000)
 
                 }
@@ -134,7 +130,6 @@ class Carousel {
                     let actualValue = that.getAbsoluteVal(left) - that.imgPlusMargins + "px";
                     img.style.left = actualValue;
                 }
-                console.log(that.view)
                 if (that.view === 5) {
                     that.imgArr[0].style.display = "none";
                     that.imgArr[0].style.left = that.containerWidth + that.imgPlusMargins - (that.containerPieceWidth - that.imgMargin) + "px";
@@ -142,7 +137,6 @@ class Carousel {
                     setTimeout(() => {
                         that.imgArr = that.shiftLeft(that.imgArr, 1)
                         that.imgArr[that.imgArr.length - 1].style.display = "block";
-                        console.log(that.imgArr)
                     }, 1000)
 
                 }
