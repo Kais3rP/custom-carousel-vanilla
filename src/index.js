@@ -52,6 +52,7 @@ class Carousel {
 
         function createArrows(that) {
             //import fontawesome
+            
             const link = document.createElement("link");
             const head = document.querySelector("head");
             head.appendChild(link);
