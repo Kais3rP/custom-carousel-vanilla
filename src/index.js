@@ -1,7 +1,7 @@
 class Carousel {
-    constructor(containerWidth=800, containerHeight=500, widthRatio=80, heightRatio=80, imgMargin=40) {
-        this.container = containerCarousel;
-        this.imgArr = [...containerCarousel.querySelectorAll(".carousel-img")];
+    constructor(container=containerCarousel, containerWidth=800, containerHeight=500, widthRatio=80, heightRatio=80, imgMargin=40) {
+        this.container = container;
+        this.imgArr = [...this.container.querySelectorAll(".carousel-img")];
         this.isPressed = false;
         this.view = Math.floor(this.imgArr.length / 2);
         this.containerWidth = containerWidth;
@@ -67,7 +67,7 @@ class Carousel {
             left.style.textShadow = "3px 3px 10px #FFFFFF";
             left.style.cursor = "pointer";
             left.id = "left";
-            containerCarousel.appendChild(left);
+            that.container.appendChild(left);
             const right = document.createElement("i")
             right.classList.add("fas");
             right.classList.add("fa-chevron-right");
@@ -78,7 +78,7 @@ class Carousel {
             right.style.textShadow = "3px 3px 10px #FFFFFF";
             right.style.cursor = "pointer";
             right.id = "right";
-            containerCarousel.appendChild(right)
+            that.container.appendChild(right)
             left.onmouseover = (e) => {
                 e.target.style.color = "#CDCDCD";
             }
@@ -171,5 +171,4 @@ class Carousel {
     getAbsoluteVal(val) {
         return parseInt(val.match(/-*\d+/)[0])
     }
-
 }

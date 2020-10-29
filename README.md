@@ -76,7 +76,7 @@ Or by importing the minified version directly as a script.
 * Now you just need to create an instance of the Carousel constructor: const carousel = new Carousel()
 
 ## This is the constructor : 
-#### ```Carousel(container width (px), container height (px), image width ratio (%), image height ratio (%), margin between images (px))```
+#### ```Carousel(container id, container width (px), container height (px), image width ratio (%), image height ratio (%), margin between images (px))```
 This is how you call the function:
 
 ```
@@ -126,7 +126,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Cesare Polonara - [@CesarePolonara](https://twitter.com/CesarePolonara) - cesare.polonara@gmail.com<br>
-Project Link: [https://github.com/Kais3rP/create-star-ratings](https://github.com/Kais3rP/custom-carousel-vanilla)<br>
+Project Link: [https://github.com/Kais3rP/custom-carousel-vanilla](https://github.com/Kais3rP/custom-carousel-vanilla)<br>
 Demo Link : [https://codepen.io/kais3rp/pen/yLOKdVj](https://codepen.io/kais3rp/pen/wvWeVvx)<br>
 Personal Site : [http://cesare-polonara.netlify.app/](http://cesare-polonara.netlify.app/)
 
