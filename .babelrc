@@ -1,0 +1,10 @@
+{
+    "presets": [["minify", {
+      "mangle": {
+        "exclude": ["Carousel"]
+      },
+      "keepFnName": true,
+      
+    }]],
+    "comments": false
+  }

@@ -1,0 +1,25 @@
+{
+  "name": "carousel",
+  "version": "1.0.0",
+  "description": "Highly customizable carousel in Vanilla JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "babel src -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kais3rP/custom-carousel-vanilla.git"
+  },
+  "author": "Cesare Polonara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kais3rP/custom-carousel-vanilla/issues"
+  },
+  "homepage": "https://github.com/Kais3rP/custom-carousel-vanilla#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "babel-preset-minify": "^0.5.1"
+  }
+}
